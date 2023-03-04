@@ -12,7 +12,7 @@ getData(urlCategory)
 
 const displayCategory = (data) => {
    data.news_category.forEach(element => {
-    linkContainer.innerHTML += ` <li>${element.category_name}</li>`
+    linkContainer.innerHTML += ` <li> <a class="text-decoration-none text-black" href="#">${element.category_name} </a></li>`
    });
     
 }
